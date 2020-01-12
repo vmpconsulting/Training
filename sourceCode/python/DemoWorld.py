@@ -1,0 +1,3 @@
+# A helloworld program again...
+print ("demo world");
+input();

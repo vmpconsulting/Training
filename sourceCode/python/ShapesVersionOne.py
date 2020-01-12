@@ -1,0 +1,40 @@
+##########################################################################################################
+# Basic Python classes along with it's methods, that prints two triangles, one straightup and another in 
+# reverse...
+# @version 2.0
+# A Simple program, to display the triangle both in straightup and upsidedown way, as a way of teaching the
+# freshers about the power of Python code...
+# @version 1.0
+# @author Coindsyz, SaibabaColonly, Coimbatore
+# @date Thu, 09Jan2020
+##########################################################################################################
+
+class Shapes():
+    def displayTriangle(self):
+        numOfLines = 5
+        numOfStars = 1
+        for i in range(numOfLines):
+            for k in range (numOfLines - i):
+                print (" ", end = " ")
+            for j in range(numOfStars):
+                print ("*", end = " ")
+            numOfStars += 2
+            print()
+        input()
+    def displayReversedTriangle(self):
+        numOfLines = 5;
+        numOfStars = 9;
+        for i in range(numOfLines):
+            print(" ", end=" ");
+            for k in range (i):
+                print(" ", end = " ");
+            for j in range(numOfStars):
+                print ("*", end = " ");
+            numOfStars -=2;
+            print();
+        input();
+ 
+      
+myShapes = Shapes();
+myShapes.displayTriangle();
+myShapes.displayReversedTriangle();
