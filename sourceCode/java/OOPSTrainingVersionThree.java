@@ -61,6 +61,21 @@ class Square extends Shapes {
     }
 }
 
+class Circle extends Shapes {
+
+    public void printYourShape() {
+        System.out.println("I'm a Circle!!!");
+    }
+}
+
+
+class BackwardSlash extends Shapes {
+
+    public void  printYourShape() {
+        System.out.println("I'm a BackwardSlash!!!");
+    }
+}
+
 public class OOPSTrainingVersionThree {
   
     //The main() method, as usual...
@@ -70,6 +85,8 @@ public class OOPSTrainingVersionThree {
         //Shapes myShapes = new Shapes();
         Triangle myTriangle = new Triangle();
         Square mySquare = new Square();
+        Circle myCircle = new Circle();
+        BackwardSlash myBackwardSlash = new BackwardSlash();
 
         //System.out.println("\n\n\nCalling myShapes.describeSelf()...");
         //myShapes.describeSelf();
@@ -90,6 +107,8 @@ public class OOPSTrainingVersionThree {
         
         letsPrintTheShapeOfAllChildren(myTriangle);
         letsPrintTheShapeOfAllChildren(mySquare);
+        letsPrintTheShapeOfAllChildren(myCircle);
+        letsPrintTheShapeOfAllChildren(myBackwardSlash);
         
 
 
